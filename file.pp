@@ -12,3 +12,7 @@ file { '/tmp/adirectory' :
    group   => 'saumik' ,
    mode    => '0755' ,
 }
+file { '/tmp/adirectory/alink' :
+   ensure => 'link' ,
+   target => '/tmp/afile' ,
+}
