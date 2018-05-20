@@ -5,3 +5,10 @@ file { '/tmp/afile' :
    group   => 'saumik' ,
    mode    => '0644' ,
 }
+
+file { '/tmp/adirectory' :
+   ensure  => 'directory',
+   owner   => 'saumik' ,
+   group   => 'saumik' ,
+   mode    => '0755' ,
+}
